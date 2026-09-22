@@ -19,9 +19,10 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-automated-answer-evaluation/src/train
-automated-answer-evaluation/Answer key.pdf
-automated-answer-evaluation/Answer1.pdf
+src/train
+Answer key.pdf
+Answer1.pdf
+CLAUDE.md
 
 # Virtual environments
 venv/
