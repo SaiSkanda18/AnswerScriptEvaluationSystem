@@ -42,7 +42,7 @@ Updated Policy
 
 See `requirements.txt` for the full dependency list. Key dependencies:
 - `Flask` (web interface)
-- `pytesseract`, `opencv-python`, `pdf2image` (OCR — preserved)
+- `pytesseract`, `opencv-python`, `pdf2image` (OCR)
 - `sentence-transformers`, `faiss-cpu` (RAG embeddings and vector store)
 - `scikit-learn`, `numpy` (evaluation policy and features)
 - `python-dotenv` (configuration)
