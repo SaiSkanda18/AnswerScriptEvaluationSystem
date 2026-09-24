@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Review</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Teacher Review — Evaluation #{{ evaluation.evaluation_id }}</h1>
+        <p><strong>Original Score:</strong> {{ evaluation.original_score }}</p>
+        <p><strong>Student Text (first 500 chars):</strong> {{ evaluation.student_text[:500] }}</p>
+        <p><strong>Reference Context:</strong> {{ evaluation.rag_reference_ids }}</p>
+        <form method="post">
+            <div class="form-group">
+                <label for="corrected_score">Corrected Score (optional — leave empty to accept):</label>
+                <input type="number" step="0.1" class="form-control" id="corrected_score" name="corrected_score">
+            </div>
+            <div class="form-group">
+                <label for="feedback_text">Optional Feedback:</label>
+                <textarea class="form-control" id="feedback_text" name="feedback_text" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+        <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+    </div>
+</body>
+</html>

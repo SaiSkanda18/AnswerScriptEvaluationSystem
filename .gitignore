@@ -33,6 +33,13 @@ env/
 # Environment variables
 .env
 
+# Database / model artifacts
+feedback.db
+database/*.db
+faiss_index/
+models/*.pkl
+models/*.pth
+
 # IDE
 .idea/
 .vscode/
